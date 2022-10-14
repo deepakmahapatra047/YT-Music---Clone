@@ -1,0 +1,9 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
+    color: white;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}

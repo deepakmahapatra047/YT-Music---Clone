@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <title>YT Music</title>
+</head>
+<body style="background-color: black ;">
+    <header>
+        <nav style="background-color: black ;" class="nav flex">
+
+            <img id="logo" src="images/Logo.png">
+            <div class="nav-mid">
+                <h3>Home</h3>
+                <h3>Explore</h3>
+                <h3>Library</h3>
+                <h3>Upgrade</h3>
+                <div class="search flex">
+                    <img style="height: 20px;" src="images/search-icon-png-9982.png">
+                    <h3>Search</h3>
+                </div>
+            </div>
+            <img style="margin-top: 10px;margin-right: 23px; height: 38px;margin-left: 81px;" height="40px"
+                src="images/profile icon.png">
+        </nav>
+    </header>
+
+    <main style="margin-top: 118px;;">
+        <section class="up">
+            <img src="images/darshan.jpg" style=" height: 243px;width: 218px;">
+            <div style=" width: 736px;">
+                <h1>Presenting Darshan Raval</h1>
+                <img src="images/label.png">
+            </div>
+        </section>
+        <section class="down">
+            <div class="flex p1">
+                <b style="cursor: pointer;" id="hii">Hawa Banke</b>
+                <p>Darshan Raval</p>
+                <p>3:44</p>
+            </div>
+            <hr style="margin-top: 20px;">
+            <div style="margin-top:20px" class="flex p1">
+                <b style="cursor: pointer;" id="hlw">Chogada (From "Loveyatri - A Journey Of Love")
+                </b>
+                <p>
+                    Darshan Raval & Asees Kaur</p>
+                <p>2:34</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        const element = document.getElementById("hii");
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementsByTagName("footer")[0].innerHTML = `
+<audio style="height:60px; width:100%; margin-top:20px" controls>
+  <source src="music/hawa.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio> `;
+}
+
+
+const e = document.getElementById("hlw");
+e.addEventListener("click", func);
+
+function func() {
+  document.getElementsByTagName("footer")[0].innerHTML = `
+<audio style="height:60px; width:100%; margin-top:20px" controls>
+  <source src="music/c.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio> `;
+}
+    </script>
+
+
+    
+</body>
+</html>

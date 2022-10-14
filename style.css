@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+main{
+   margin-left: 100px;
+   margin-right: 100px;
+}
+.nav-mid{
+    display: flex;
+    justify-content: space-around;
+    width: 642px;
+    align-items: center;
+    color: white;
+}
+.nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#logo{
+    height: 64px;
+    width: 130px;
+}
+.s1{
+    display: flex;
+    margin-top: 70px; 
+    justify-content: center;
+}
+
+.s2Up{
+    margin-top: 20px;
+    align-items: center;
+}
+.s2Down img{
+    height: 243px;
+    width: 218px;
+    
+}
+.s2Down{
+    margin-bottom: 30px;
+}
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.down{
+    margin-top: 70px;
+    font-family: Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
+    color: white;
+}
+.p1{
+    align-items: center;
+}
